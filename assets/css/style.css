@@ -9,15 +9,14 @@ body {
   height: 80vh;
   background-color: #1A1A1D; }
 
-.logotipo {
-  width: 250px;
-  transition: width 2s; }
-  .logotipo:hover {
-    width: 280px; }
-
 .navbar {
   background: #1a1a1d;
   background: linear-gradient(0deg, #1a1a1d 0%, #801542 65%, #950740 100%); }
+  .navbar .logotipo {
+    width: 250px;
+    transition: width 2s; }
+    .navbar .logotipo:hover {
+      width: 280px; }
   .navbar .nav-item {
     padding-inline-start: 150px;
     display: flex;
