@@ -51,12 +51,3 @@ body {
       width: 100%;
       height: 100%;
       border: 0; }
-
-footer {
-  background: #1a1a1d;
-  background: linear-gradient(0deg, #950740 0%, #801542 65%, #1a1a1d 100%);
-  width: 100%;
-  text-align: left;
-  padding: 50px 50px 60px 50px;
-  margin-top: 80px;
-  font-family: 'Raleway', sans-serif; }
