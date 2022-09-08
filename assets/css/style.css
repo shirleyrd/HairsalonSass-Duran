@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200&family=Raleway:wght@100;200;400&display=swap");
+footer {
+  background: #1a1a1d;
+  background: linear-gradient(0deg, #950740 0%, #801542 65%, #1a1a1d 100%);
+  width: 100%;
+  text-align: left;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+  font-family: 'Raleway', sans-serif; }
+  footer .icon, footer .fas {
+    width: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: solid;
+    padding: 10px; }
+
+.icono--fa {
+  background-color: #4a4ac4; }
+
+.icono--in {
+  background-color: #db53b2; }
+
+.icono--tik {
+  background-color: #00ff6a; }
+
+.fas:hover {
+  color: #db53b2; }
+
 * {
   margin: 0;
   padding: 0;

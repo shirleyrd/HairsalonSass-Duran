@@ -1,0 +1,44 @@
+footer {       
+    background: rgb(26,26,29);
+    background: linear-gradient(0deg, rgba(149,7,64,1)  0%, rgba(128,21,66,1) 65%,rgba(26,26,29,1)100%);
+    width: 100%;
+    text-align: left;   
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;   
+    font-family: 'Raleway', sans-serif; 
+   
+
+    .icon{
+     width: 40px;
+     margin-top: 15px;
+     margin-right: 15px;
+     border:solid;
+     padding:10px; 
+    
+    } 
+  
+}
+
+$redes: (
+    fa: #4a4ac4, 
+    in: #db53b2,
+    tik: #00ff6a
+);
+
+@each $redsocial, $colores in $redes {
+
+    .icono--#{$redsocial} {
+        background-color: $colores
+    }
+    
+}
+
+.fas {
+       @extend .icon;
+
+    &:hover {
+       color: #db53b2;
+    }
+      
+
+}

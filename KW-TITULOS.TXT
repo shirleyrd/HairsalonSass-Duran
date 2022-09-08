@@ -1,0 +1,33 @@
+Se cambiaron los títulos de cada html incluyendo al comienzo el nombre de cada página y luego el nombre del proyecto, en este caso "Love Hair Beauty Studio".
+
+Inicio | "Love Hair Beauty Studio".
+Nosotros | "Love Hair Beauty Studio"
+Turnos | "Love Hair Beauty Studio"
+Contacto | "Love Hair Beauty Studio"
+Portfolio | "Love Hair Beauty Studio"
+
+Se agregó una descripción en cada una de las páginas, donde se describe brevemente el contenido que se puede hallar en cada una. 
+
+Inicio: 
+
+"Enterate de las novedades de nuestro salón de belleza: tendencias, cambios de look, eventos en los que participamos, convnocatorias de modelos, cursos y mas."
+
+Nosotros: 
+
+"Conocé a nuestros profesionales y los servicios disponibles"
+
+Turnos: 
+
+"Si buscas renovar tu look, llená el formulario para reservar tu turno, contanos tu idea y nos comunicaremos para asesoramiento."
+
+Portfolio:
+
+"Trabajos realizados por nuestros profesionales,  te mostramos ideas para renovar tu look."
+
+Contacto
+
+"Envianos tu consulta o sugerencia"
+
+Se agregaron las siguientes keywords:
+
+Tendencias, Cabello, Color, Corte, Moda, Comodoro Rivadavia, Manicuría, Estilistas, Coloristas, Estética distribuídas en las diferentes páginas.
