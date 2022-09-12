@@ -101,15 +101,32 @@ body {
 .formTurnos {
   background: #fc4690;
   background: radial-gradient(circle, rgba(252, 70, 144, 0.594258) 0%, rgba(149, 7, 64, 0.563445) 100%);
-  height: 650px;
+  height: fit-content;
   width: 50%;
   margin: auto;
   margin-top: 100px;
   padding-top: 15px;
+  padding-bottom: 15px;
   padding-inline: 55px;
   border-radius: 30px;
   font-family: 'Raleway', sans-serif;
   line-height: 15pt; }
+
+.formContacto {
+  background: #fc4690;
+  background: radial-gradient(circle, rgba(252, 70, 144, 0.594258) 0%, rgba(149, 7, 64, 0.563445) 100%);
+  height: fit-content;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-inline: 55px;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 15pt; }
+  .formContacto .form-label {
+    width: fit-content; }
 
 @media only screen and (max-width: 480px) {
   .logotipo {
@@ -120,14 +137,16 @@ body {
     justify-content: flex-start; }
   .nav-item a {
     font-size: medium; }
-  .formTurnos {
+  .formTurnos,
+  .formContacto {
     width: 100%;
-    height: auto;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
     height: max-content; }
-    .formTurnos .servicios {
+    .formTurnos .servicios,
+    .formContacto .servicios {
       display: inline-block; } }
