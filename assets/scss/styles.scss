@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200&family=Raleway:wght@100;200;400&display=swap');
 @import "./footer";
-
-
+@import "./variables";
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@
 
 body {
     height: 80vh;
-    background-color:#1A1A1D;
+    background-color: $colorbackg;
     
     }
 
@@ -34,12 +33,12 @@ body {
     display:flex;
     justify-content: space-between;
     a {
-        color: #9c9c9e;
+        color: $colornavitem;
         text-decoration: none;
         font-size: 1.5rem;
         transition: all 2s;
         &:hover {
-            color:#4e4e50;
+            color:$colorhover;
             -webkit-transform: rotateY(180deg);
             -webkit-transform-style: preserve-3d;
             transform: rotateY(180deg);
@@ -57,17 +56,17 @@ body {
     background: radial-gradient(circle, rgba(255, 73, 147, 0.6) 0%, rgba(149,7,64,0.5634454465379901) 100%);
 
     h1 {
-        color:#f3cad5;
+        color:$colortextoprin;
     }
 
     h2 {
         text-align:right;
-        color:#f3cad5;
+        color:$colortextoprin;
        
     }
 
     p {
-        color:#f3cad5;
+        color:$colortextoprin;
         text-align: justify;
 
 
@@ -91,14 +90,14 @@ body {
          
 
  .card-body {
-    background-color: rgba(255, 73, 147, 0.6) ;
+    background-color: $colorbgp ;
     
     .card-text {
         a {
         text-decoration: none;
-        color: #f3cad5;
+        color: $colortextoprin;
         &:hover {
-            color: rgb(26,26,29) ;
+            color: $colorhover;
             }
     } 
   }
@@ -106,7 +105,7 @@ body {
    
  }
  .title {
-    color:#f3cad5;
+    color: $colortextoprin;
  }
  .carousel {
     width: 80%;
