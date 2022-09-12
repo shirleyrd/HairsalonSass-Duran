@@ -117,19 +117,23 @@ body {
     align-content: center;
 }
 
+@mixin dimensiones($alto,$ancho,$bordradius) {
+    height:$alto;
+    width:$ancho;
+    border-radius:$bordradius;
+    
 
+}
 
 .formTurnos {
     background: rgb(252,70,144);
     background: radial-gradient(circle, rgba(252,70,144,0.5942577714679622) 0%, rgba(149,7,64,0.5634454465379901) 100%);
-    height: fit-content; 
-    width: 50%;
+    @include dimensiones(fit-content, 50%, 30px);
     margin: auto;
     margin-top: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-inline: 55px;
-    border-radius: 30px;  
+    padding-inline: 55px;      
     font-family: 'Raleway', sans-serif;
     line-height: 15pt;
 
@@ -137,18 +141,19 @@ body {
     
 }
 
+
+
+
+
 .formContacto {
     background: rgb(252,70,144);
     background: radial-gradient(circle, rgba(252,70,144,0.5942577714679622) 0%, rgba(149,7,64,0.5634454465379901) 100%);
-    height: fit-content; 
-    width: 50%;
+    @include dimensiones(fit-content, 50%, 30px);
     margin: auto;
     margin-top: 100px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-inline: 55px;
-    border-radius: 30px;  
-    font-family: 'Raleway', sans-serif;
+    padding-inline: 55px;    
     line-height: 15pt;
 
     .form-label {
@@ -175,15 +180,19 @@ body {
      .nav-item a {
          font-size: medium;
      }
-     
-   
+
+
+     @mixin dimensiones2($alto2,$ancho2,$display) {
+        height: $alto2;
+        width: $ancho2;
+        display:$display;
+
+     }       
    
  
     .formTurnos,
     .formContacto {
-     width: 100%;
-     height:fit-content;
-     display: flex;
+     @include dimensiones2(fit-content, 100%, flex);     
      flex-direction: column;
      justify-content: center;
      align-items: center;
@@ -192,15 +201,10 @@ body {
 
      .servicios {
         display:inline-block;
-     }
-
-     
+     }    
 
      }
-    }
- 
-    
- 
+    } 
  
  
  
