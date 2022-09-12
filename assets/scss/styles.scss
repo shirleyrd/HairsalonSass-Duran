@@ -82,4 +82,30 @@ body {
 }            
          
 
- 
+ .card-body {
+    background-color: rgba(255, 73, 147, 0.6) ;
+    
+    .card-text {
+        a {
+        text-decoration: none;
+        color: #f3cad5;
+        &:hover {
+            color: rgb(26,26,29) ;
+            }
+    } 
+  }
+
+   
+ }
+ .title {
+    color:#f3cad5;
+ }
+ .carousel {
+    width: 80%;
+    margin:auto;
+  
+}
+
+.carousel-inner {
+    align-content: center;
+}

@@ -75,3 +75,21 @@ body {
       width: 100%;
       height: 100%;
       border: 0; }
+
+.card-body {
+  background-color: rgba(255, 73, 147, 0.6); }
+  .card-body .card-text a {
+    text-decoration: none;
+    color: #f3cad5; }
+    .card-body .card-text a:hover {
+      color: #1a1a1d; }
+
+.title {
+  color: #f3cad5; }
+
+.carousel {
+  width: 80%;
+  margin: auto; }
+
+.carousel-inner {
+  align-content: center; }
