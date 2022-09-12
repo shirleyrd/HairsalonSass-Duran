@@ -62,8 +62,12 @@ body {
   background: radial-gradient(circle, rgba(255, 73, 147, 0.6) 0%, rgba(149, 7, 64, 0.563445) 100%); }
   .container h1 {
     color: #f3cad5; }
-  .container p {
+  .container h2 {
+    text-align: right;
     color: #f3cad5; }
+  .container p {
+    color: #f3cad5;
+    text-align: justify; }
   .container .containerVid {
     position: relative;
     overflow: hidden;
@@ -93,3 +97,37 @@ body {
 
 .carousel-inner {
   align-content: center; }
+
+.formTurnos {
+  background: #fc4690;
+  background: radial-gradient(circle, rgba(252, 70, 144, 0.594258) 0%, rgba(149, 7, 64, 0.563445) 100%);
+  height: 650px;
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  padding-top: 15px;
+  padding-inline: 55px;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 15pt; }
+
+@media only screen and (max-width: 480px) {
+  .logotipo {
+    justify-self: center;
+    width: 100%; }
+  .nav-item {
+    display: flex;
+    justify-content: flex-start; }
+  .nav-item a {
+    font-size: medium; }
+  .formTurnos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    height: max-content; }
+    .formTurnos .servicios {
+      display: inline-block; } }
