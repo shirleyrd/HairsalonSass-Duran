@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200&family=Raleway:wght@100;200;400&display=swap');
-@import "./footer";
 @import "./variables";
+@import "../scss/layout/footer";
+@import "../scss/layout/header";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,48 +14,31 @@
 
 body {
     height: 80vh;
-    background-image: url(../img/tijerabcgtransparencia.png);    
-    position: relative;
-    z-index: 3;
-    background-color: $colorbackg;
-    
+    background-image: url(../img/tijerabcgtransparencia.png);  
+    background-color: $colorbackg;   
     
     }
 
 
-.navbar {
-    background: rgb(26,26,29);
-    background: linear-gradient(0deg, #1a1a1d 0%, rgb(128, 21, 66) 65%, rgb(149, 7, 64) 100%);
+    .galeria {
+        width: 36rem;
+        height: 23rem;
+        position: relative;
+        display: flex;        
+        overflow: auto;
+        scroll-snap-type: x mandatory;
 
-    .logotipo {
-        width: 250px;
-        transition: width 2s;
-        &:hover{
-            width: 280px;
+        img {
+            width: 100%;
+            height: 100%;
+            position: sticky; left: 0;
+            flex-shrink: 0;
+            object-fit: cover;
+            scroll-snap-align: start;
         }
-    }
+
     
-    .nav-item {
-    padding-inline-start: 150px;
-    display:flex;
-    justify-content: space-between;
-    a {
-        color: $colornavitem;
-        text-decoration: none;
-        font-size: 1.5rem;
-        transition: all 2s;
-        &:hover {
-            color:$colorhover;
-            -webkit-transform: rotateY(180deg);
-            -webkit-transform-style: preserve-3d;
-            transform: rotateY(180deg);
-            transform-style: preserve-3d;                  
-                
-        }                   
-           
     }
-   }  
-}
 
 
 .title {
@@ -60,12 +46,9 @@ body {
              animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
-.container { 
-    
-    
-    position:relative;
-    z-index: 1;
-    
+.container {   
+  
+
 
     h1 {
         color:$colortextoprin;
@@ -186,10 +169,11 @@ body {
      width: 100%;
      
     }
+
  
     .nav-item {
      display: flex;    
-     justify-content: flex-start;
+     align-content: flex-start;
  
      }
  
