@@ -65,31 +65,54 @@ body {
   background-color: #1a1a1d; }
 
 .title {
+  color: #f3cad5;
+  font-size: 5rem;
+  padding-top: 20px;
   -webkit-animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.container h1 {
-  color: #f3cad5; }
-
-.container h2 {
-  text-align: right;
-  color: #f3cad5; }
-
-.container p {
-  color: #f3cad5;
-  text-align: justify; }
-
-.container .containerVid {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%; }
-  .container .containerVid .mainContent__video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; }
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "containerVid1 containerText1" "containerText2 containerVid2"; }
+  .container .containerVid1 {
+    grid-area: containerVid1;
+    padding-right: 20px;
+    padding-top: 20px; }
+  .container .containerText1 {
+    grid-area: containerText1;
+    justify-content: right;
+    padding-top: 20px; }
+    .container .containerText1 p {
+      text-align: justify;
+      padding-left: 20px; }
+  .container .containerVid2 {
+    grid-area: containerVid2;
+    justify-content: right;
+    padding-left: 20px;
+    padding-top: 20px; }
+  .container .containerText2 {
+    grid-area: containerText2;
+    justify-content: left;
+    padding-right: 20px;
+    padding-top: 20px; }
+    .container .containerText2 p {
+      text-align: justify;
+      padding-right: 20px;
+      padding-top: 10px; }
+    .container .containerText2 .titleSub {
+      text-align: left; }
+  .container h1 {
+    color: #f3cad5; }
+  .container h2 {
+    text-align: right;
+    color: #f3cad5; }
+  .container p {
+    color: #f3cad5;
+    text-align: justify; }
 
 .card-body {
   background-color: #1a1a1d; }
@@ -98,11 +121,6 @@ body {
     color: #f3cad5; }
     .card-body .card-text a:hover {
       color: #4e4e50; }
-
-.title {
-  color: #f3cad5;
-  font-size: 5rem;
-  padding-top: 20px; }
 
 .carousel {
   width: 80%;
@@ -142,10 +160,23 @@ body {
   .formContacto .form-label {
     width: fit-content; }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .logotipo {
     justify-self: center;
     width: 100%; }
+  .title {
+    color: #f3cad5;
+    font-size: 5rem;
+    padding-top: 20px; }
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "containerVid1 "  "containerText1" "containerVid2" "containerText2"; }
+    .container .mainContent__video {
+      width: 100%; }
+    .container .containerVid1, .container .containerText1, .container .containerVid2 {
+      margin: auto; }
   .nav-item {
     display: flex;
     align-content: flex-start; }
