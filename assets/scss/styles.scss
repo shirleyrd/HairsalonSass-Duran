@@ -36,7 +36,7 @@ main {
              animation: slide-in-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
-.container {   
+.containerIndex {   
     
         width: 80%;
         margin: auto;
@@ -52,37 +52,38 @@ main {
     
     .containerVid1 {
         grid-area: containerVid1;
-        padding-right: 20px;
-        padding-top: 20px;
+        padding-right: $paddingestandar;
+        padding-top: $paddingestandar;
     }
     
     .containerText1 {
         grid-area: containerText1;
         justify-content: right;
-        padding-top: 20px;
+        padding-top: $paddingestandar;
 
         p {
             text-align: justify;
-            padding-left: 20px;
+            padding-left: $paddingestandar;
         }
     }
     
     .containerVid2 {
-        grid-area: containerVid2;
-        justify-content: right;
-        padding-left: 20px;
-        padding-top: 20px;
+        grid-area: containerVid2;        
+        padding-left: $paddingestandar;
+        padding-top: 30px;
+        padding-bottom: $paddingestandar;
     }
     
     .containerText2 {
         grid-area: containerText2;
         justify-content: left;
-        padding-right: 20px;
-        padding-top: 20px;
+        padding-right: $paddingestandar;
+        padding-top: 30px;
+        padding-bottom: $paddingestandar;
 
         p { 
             text-align: justify;
-            padding-right: 20px;
+            padding-right: $paddingestandar;
             padding-top: 10px;
 
         }
@@ -105,6 +106,8 @@ main {
     h2 {
         text-align:right;
         color:$colorbgp;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px $colorhover;
        
     }
 
@@ -227,7 +230,7 @@ main {
     
         color: $colortextoprin;
         font-size: 3rem;
-        padding-top: 20px;
+        padding-top: $paddingestandar;
         }
 
 

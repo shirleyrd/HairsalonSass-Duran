@@ -72,46 +72,49 @@ main {
   -webkit-animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.container {
+.containerIndex {
   width: 80%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr;
   grid-template-areas: "containerVid1 containerText1" "containerText2 containerVid2"; }
-  .container .containerVid1 {
+  .containerIndex .containerVid1 {
     grid-area: containerVid1;
     padding-right: 20px;
     padding-top: 20px; }
-  .container .containerText1 {
+  .containerIndex .containerText1 {
     grid-area: containerText1;
     justify-content: right;
     padding-top: 20px; }
-    .container .containerText1 p {
+    .containerIndex .containerText1 p {
       text-align: justify;
       padding-left: 20px; }
-  .container .containerVid2 {
+  .containerIndex .containerVid2 {
     grid-area: containerVid2;
-    justify-content: right;
     padding-left: 20px;
-    padding-top: 20px; }
-  .container .containerText2 {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+  .containerIndex .containerText2 {
     grid-area: containerText2;
     justify-content: left;
     padding-right: 20px;
-    padding-top: 20px; }
-    .container .containerText2 p {
+    padding-top: 30px;
+    padding-bottom: 20px; }
+    .containerIndex .containerText2 p {
       text-align: justify;
       padding-right: 20px;
       padding-top: 10px; }
-    .container .containerText2 .titleSub {
+    .containerIndex .containerText2 .titleSub {
       text-align: left; }
-  .container h1 {
+  .containerIndex h1 {
     color: #f3cad5; }
-  .container h2 {
+  .containerIndex h2 {
     text-align: right;
-    color: #ff499399; }
-  .container p {
+    color: #ff499399;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #4e4e50; }
+  .containerIndex p {
     color: #f3cad5;
     text-align: justify; }
 
