@@ -43,14 +43,9 @@ footer {
     .navbar .nav-item a {
       color: #9c9c9e;
       text-decoration: none;
-      font-size: 1.5rem;
-      transition: all 2s; }
+      font-size: 1.5rem; }
       .navbar .nav-item a:hover {
-        color: #4e4e50;
-        -webkit-transform: rotateY(180deg);
-        -webkit-transform-style: preserve-3d;
-        transform: rotateY(180deg);
-        transform-style: preserve-3d; }
+        color: #4e4e50; }
 
 body {
   height: 80vh; }
@@ -196,6 +191,11 @@ main {
   .logotipo {
     justify-self: center;
     width: 100%; }
+  .nav-item {
+    display: flex;
+    align-content: flex-start; }
+  .nav-item a {
+    font-size: medium; }
   .title {
     color: #f3cad5;
     font-size: 3rem;
@@ -206,14 +206,11 @@ main {
     flex-direction: column; }
     .containerIndex .mainContent__video {
       width: 100%; }
+  .title_2 {
+    text-align: center; }
   .carousel {
     width: 100%;
     margin: auto; }
-  .nav-item {
-    display: flex;
-    align-content: flex-start; }
-  .nav-item a {
-    font-size: medium; }
   .formTurnos,
   .formContacto {
     height: fit-content;
@@ -226,6 +223,9 @@ main {
     .formTurnos .form-control,
     .formContacto .form-control {
       justify-content: center; }
+    .formTurnos .form-select,
+    .formContacto .form-select {
+      justify-content: left; }
   .mapa {
     width: 80%; } }
 

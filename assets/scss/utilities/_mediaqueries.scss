@@ -23,6 +23,17 @@
      width: 100%;
      
     }
+    
+    .nav-item {
+        display: flex;    
+        align-content: flex-start;
+    
+        }
+    
+        .nav-item a {
+            font-size: medium;
+        }
+        
 
     .title {
     
@@ -44,23 +55,18 @@
             
         }    
     }           
-      
+     
+    
+    .title_2 {
+        text-align: center;
+
+    }
     .carousel {
         width: 100%;
         margin:auto;
       
     }
  
-    .nav-item {
-     display: flex;    
-     align-content: flex-start;
- 
-     }
- 
-     .nav-item a {
-         font-size: medium;
-     }
-     
 
     .formTurnos,
     .formContacto {
@@ -75,6 +81,10 @@
     .form-control {        
         justify-content:center;
     
+    }
+
+    .form-select {
+        justify-content: left;
     }
     } 
  
