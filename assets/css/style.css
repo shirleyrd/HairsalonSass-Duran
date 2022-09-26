@@ -162,6 +162,8 @@ main {
   line-height: 15pt; }
   .formContacto .form-label {
     width: fit-content; }
+  .formContacto .btn {
+    color: #f3cad5; }
 
 @media screen and (max-width: 768px) {
   .containerIndex {
@@ -202,9 +204,11 @@ main {
     align-items: center;
     white-space: nowrap;
     height: max-content; }
-    .formTurnos .servicios,
-    .formContacto .servicios {
-      display: inline-block; } }
+    .formTurnos .form-label,
+    .formTurnos .for-select,
+    .formContacto .form-label,
+    .formContacto .for-select {
+      width: 100%; } }
 
 .mapa {
   width: 80%; }

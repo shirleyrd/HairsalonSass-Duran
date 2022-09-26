@@ -198,6 +198,12 @@ main {
 
     }
 
+    .btn {
+        color:$colortextoprin;
+        
+    } 
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -212,10 +218,7 @@ main {
             width: 100%;
             
         }
-      
-       
-    
-            
+         
             
     }
 
@@ -275,10 +278,14 @@ main {
      white-space: nowrap;
      height: max-content;
 
-     .servicios {
-        display:inline-block;
-     }    
+     .form-label,
+     .for-select {
+        
+        width: 100%;
+ 
+     }
 
+    
      }
     } 
  
