@@ -274,19 +274,15 @@ main {
      @include dimensiones2(fit-content, 100%, flex);     
      flex-direction: column;
      justify-content: center;
-     align-items: center;
-     white-space: nowrap;
+     align-items: center;    
      height: max-content;
 
-     .form-label,
-     .for-select {
-        
-        width: 100%;
- 
-     }
+     
 
+    .form-control {        
+        justify-content:center;
     
-     }
+    }
     } 
  
  .mapa {
@@ -329,5 +325,7 @@ main {
               transform: translateY(0);
       opacity: 1;
     }
-  }
+ }
+
+ }
 
