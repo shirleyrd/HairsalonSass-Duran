@@ -178,7 +178,8 @@ main {
   .title {
     color: #f3cad5;
     font-size: 3rem;
-    padding-top: 20px; }
+    padding-top: 20px;
+    justify-self: center; }
   .containerIndex {
     display: flex;
     flex-direction: column; }
