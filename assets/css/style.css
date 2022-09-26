@@ -165,10 +165,10 @@ main {
     width: fit-content; }
 
 @media screen and (max-width: 768px) {
-  .container {
+  .containerIndex {
     display: flex;
     flex-direction: column; }
-    .container .mainContent__video {
+    .containerIndex .mainContent__video {
       width: 100%; } }
 
 @media screen and (max-width: 480px) {
@@ -179,10 +179,10 @@ main {
     color: #f3cad5;
     font-size: 3rem;
     padding-top: 20px; }
-  .container {
+  .containerIndex {
     display: flex;
     flex-direction: column; }
-    .container .mainContent__video {
+    .containerIndex .mainContent__video {
       width: 100%; }
   .nav-item {
     display: flex;
