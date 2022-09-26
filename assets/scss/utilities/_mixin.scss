@@ -12,3 +12,18 @@
         width: $ancho2;
         display:$display;
     }
+
+    @mixin subtitulos ($color,$transform,$textshadow) {
+        color: $color;
+        text-transform:$transform;
+        text-shadow: $textshadow;
+    }
+
+    @mixin containerPadd ($paddingl, $paddingt, $paddingb) {
+        padding-left: $paddingl;
+        padding-top: $paddingt;
+        padding-bottom: $paddingb;
+    }
+
+
+  

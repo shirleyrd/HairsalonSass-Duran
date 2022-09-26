@@ -1,0 +1,163 @@
+body {
+    height: 80vh;     
+    
+    }
+
+main {
+    background-image: url(../img/tijerabcgtransparencia.png);  
+    background-color: $colorbackg;   
+}
+
+
+
+
+.title {    
+        color: $colortextoprin;
+        font-size: 5rem;
+        padding-top: 20px;           
+       -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        text-shadow: 2px 2px 5px $colorbgp;
+    
+}
+.containerIndex {   
+    
+        width: 80%;
+        margin: auto;
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas: 
+        "containerVid1 containerText1"
+        "containerText2 containerVid2";
+       
+    
+    
+    
+    .containerIndex_Vid1 {
+        grid-area: containerVid1;
+        padding-right: $paddingestandar;
+        padding-top: $paddingestandar;
+    }
+    
+    .containerIndex_Text1 {
+        grid-area: containerText1;
+        justify-content: right;
+        padding-top: $paddingestandar;
+
+        p {
+            text-align: justify;
+            padding-left: $paddingestandar;
+        }
+    }
+    
+    .containerIndex_Vid2 {
+        grid-area: containerVid2;
+        @include containerPadd ($paddingestandar, 30px, $paddingestandar);
+        
+       
+    }
+    
+    .containerIndex_Text2 {
+        grid-area: containerText2;
+        justify-content: left;
+        @include containerPadd ($paddingestandar, 30px, $paddingestandar);  
+
+        p { 
+            text-align: justify;
+            padding-right: $paddingestandar;
+            padding-top: 10px;
+
+        }
+
+       
+
+        .titleSub {
+            text-align: left;
+            
+        }
+        
+    }
+  
+
+
+    h1 {
+        color:$colortextoprin;
+    }
+
+    h2 {
+
+        @include subtitulos ($colorbgp, uppercase,2px 2px 5px $colorhover);        
+        text-align:right;
+       
+    }
+    p {
+        color:$colortextoprin;
+        text-align: justify;
+    }
+
+  
+
+ 
+   
+}            
+         
+
+ .card-body {
+    background-color: $colorbackg;
+    
+    .card-text {
+        a {
+        text-decoration: none;
+        color: $colortextoprin;
+        &:hover {
+            color: $colorhover;
+            }
+    } 
+  }
+
+   
+ }
+ 
+
+ .title_2 {
+    @include subtitulos ($colorbgp, uppercase,2px 2px 5px $colorhover);
+ }
+ .carousel {
+    width: 70%;    
+    margin:auto;
+
+
+  .carousel-inner {
+    align-content: center;
+     }
+
+    
+ }
+
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  

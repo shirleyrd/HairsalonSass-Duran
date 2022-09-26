@@ -1,0 +1,50 @@
+
+.formTurnos {
+    background: $colorbackg;    
+    @include dimensiones(fit-content, 50%, 30px);
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-inline: 55px;      
+    font-family: 'Raleway', sans-serif;
+    color:$colortextoprin;
+    line-height: 15pt;
+    
+    .btn {
+        color:$colortextoprin;
+        
+    } 
+
+    
+    
+}
+
+
+
+
+
+.formContacto {
+    background: $colorbackg; 
+    @include dimensiones(fit-content, 50%, 30px);
+    color:$colortextoprin;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-inline: 55px;    
+    line-height: 15pt;
+
+    .form-label {
+        
+       width: fit-content;
+
+    }
+
+    .btn {
+        color:$colortextoprin;
+        
+    } 
+
+
+}

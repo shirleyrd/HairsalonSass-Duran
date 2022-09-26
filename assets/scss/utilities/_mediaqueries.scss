@@ -1,0 +1,85 @@
+
+@media screen and (max-width: 768px) {
+
+    .containerIndex {  
+    
+        display:flex;
+        flex-direction: column;
+
+
+        .mainContent__video {
+            width: 100%;
+            
+        }
+         
+            
+    }
+
+}
+
+@media  screen and (max-width: 480px) {
+    .logotipo {
+     justify-self: center;
+     width: 100%;
+     
+    }
+
+    .title {
+    
+        color: $colortextoprin;
+        font-size: 3rem;
+        padding-top: $paddingestandar;
+        justify-self: center;
+        }
+
+
+    .containerIndex {  
+    
+        display:flex;
+        flex-direction: column;
+
+
+        .mainContent__video {
+            width: 100%;
+            
+        }    
+    }           
+      
+    .carousel {
+        width: 100%;
+        margin:auto;
+      
+    }
+ 
+    .nav-item {
+     display: flex;    
+     align-content: flex-start;
+ 
+     }
+ 
+     .nav-item a {
+         font-size: medium;
+     }
+     
+
+    .formTurnos,
+    .formContacto {
+     @include dimensiones2(fit-content, 100%, flex);     
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;    
+     height: max-content;
+
+     
+
+    .form-control {        
+        justify-content:center;
+    
+    }
+    } 
+ 
+ .mapa {
+    width: 80%;
+ }
+ 
+}
