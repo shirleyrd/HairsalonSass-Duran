@@ -62,7 +62,7 @@
       
          <form class="formTurnos" action="">
 
-           <div class="formData mb-3">
+           <div class="formData mt-3 mb-3">
             <label for="nombre-apellido">Nombre y Apellido:</label>
             <input type="text" class="form-control" id="nombre-apellido"/>
            </div>
@@ -80,54 +80,52 @@
           
 
            <div>
-            <h4>¿Qué servicio solicitas?</h4>
+            <h6>Profesional</h6>
+           </div> 
 
-           </div>    
-               <div>
-                <input type="radio" id="servicio" value="1"/>
-                <label>Corte</label>
-            
-               </div>
-            
-               <div class="servicios">
-                <input type="radio" id="servicio" value="2"/>
-                <label>Color</label>
-               </div>
-            
-               <div>
-                <input type="radio" id="servicio" value="3"/>
-                <label>Manicura</label>
-               </div>
+          <div>
+           
+           <select class="form-select" aria-label="Default select example">
+            <option selected>Seleccioná a tu profesional favorito</option>
+            <option value="1">Alejandro - Barbería</option>
+            <option value="2">Esteban - Estilista</option>
+            <option value="3">Priscila - Colorista</option>
+            <option value="4">Priscila - Peinadora</option>
+            <option value="5">Alejandra - Colorista</option>
+            <option value="6">Cecilia - Peinadora</option>
+            <option value="7">Marisa - Manicuría</option>
+           </select>
+           
+          </div>  
+             
+           <div class="mt-3">
+            <h6>Día y Horario</h6>
+           </div> 
 
-               <div>
-                <p><strong>Día y Horario</strong></p>
 
-                <label for="Martes">Martes</label>
-                <input type="checkbox" id="Martes" value="dia"/>
-                <label for="Miercoles">Miércoles</label>
-                <input type="checkbox" id="Miercoles" value="dia"/>
-                <label for="Jueves">Jueves</label>                
-                <input type="checkbox" id="Jueves" value="dia"/>
-                <label for="Viernes">Viernes</label>
-                <input type="checkbox" id="Viernes" value="dia"/>
-                <label for="Sabado">Sábado</label>
-                <input type="checkbox" id="Sabado" value="dia"/>
+          <div>   
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Día</option>
+            <option value="1">Martes - T. Mañana</option>
+            <option value="2">Martes - T. Tarde</option>
+            <option value="3">Miércoles - T. Mañana</option>
+            <option value="4">Miércoles - T. Tarde</option>
+            <option value="5">Jueves - T. Mañana</option> 
+            <option value="6">Jueves - T. Tarde</option> 
+            <option value="7">Viernes - T. Mañana</option>
+            <option value="8">Viernes - T. Tarde</option>
+            <option value="7">Sábado - T. Mañana</option>
+            <option value="8">Sábado - T. Tarde</option>                  
+            </select>                 
+          </div>        
+         
 
-            
-               </div>
 
-              
-
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"><strong>Comentanos sobre tu idea</strong></label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-
-               </div>
-                                         
-            <!-- Confirmar/Borrar  -->
-
-            
+          <div class="mt-3 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Comentanos sobre tu idea, te enviaremos un mensaje confirmando el turno y horario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>             
+                
            <div>
             <button type="button" class="btn btn-grad btn-sm">Enviar</button>
             <button type="button" class="btn btn-grad btn-sm">Eliminar</button>        

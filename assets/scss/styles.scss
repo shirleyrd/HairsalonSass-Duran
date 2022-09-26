@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,200&family=Raleway:wght@100;200;400&display=swap');
-@import "./variables";
+@import "../scss/utilities/variables";
+@import "../scss/utilities/mixin";
 @import "../scss/layout/footer";
 @import "../scss/layout/header";
 
@@ -50,13 +51,13 @@ main {
     
     
     
-    .containerVid1 {
+    .containerIndex_Vid1 {
         grid-area: containerVid1;
         padding-right: $paddingestandar;
         padding-top: $paddingestandar;
     }
     
-    .containerText1 {
+    .containerIndex_Text1 {
         grid-area: containerText1;
         justify-content: right;
         padding-top: $paddingestandar;
@@ -67,14 +68,14 @@ main {
         }
     }
     
-    .containerVid2 {
+    .containerIndex_Vid2 {
         grid-area: containerVid2;        
         padding-left: $paddingestandar;
         padding-top: 30px;
         padding-bottom: $paddingestandar;
     }
     
-    .containerText2 {
+    .containerIndex_Text2 {
         grid-area: containerText2;
         justify-content: left;
         padding-right: $paddingestandar;
@@ -118,6 +119,8 @@ main {
 
     }
 
+  
+
  
    
 }            
@@ -140,22 +143,18 @@ main {
  }
  
  .carousel {
-    width: 80%;
+    width: 70%;    
     margin:auto;
-  
-}
 
-.carousel-inner {
+
+  .carousel-inner {
     align-content: center;
-}
+     }
 
-@mixin dimensiones($alto,$ancho,$bordradius) {
-    height:$alto;
-    width:$ancho;
-    border-radius:$bordradius;
     
+ }
 
-}
+
 
 .formTurnos {
     background: $colorbackg;    
@@ -168,8 +167,11 @@ main {
     font-family: 'Raleway', sans-serif;
     color:$colortextoprin;
     line-height: 15pt;
-    position: relative;
-    z-index: 1;
+    
+    .btn {
+        color:$colortextoprin;
+        
+    } 
 
     
     
@@ -244,14 +246,14 @@ main {
         .mainContent__video {
             width: 100%;
             
-        }
+        }    
+    }           
       
-       
-    
-            
-            
+    .carousel {
+        width: 100%;
+        margin:auto;
+      
     }
-
  
     .nav-item {
      display: flex;    
@@ -262,21 +264,8 @@ main {
      .nav-item a {
          font-size: medium;
      }
-
-    
      
 
-
-
-
-     @mixin dimensiones2($alto2,$ancho2,$display) {
-        height: $alto2;
-        width: $ancho2;
-        display:$display;
-
-     }       
-   
- 
     .formTurnos,
     .formContacto {
      @include dimensiones2(fit-content, 100%, flex);     
@@ -335,4 +324,3 @@ main {
     }
   }
 
-  

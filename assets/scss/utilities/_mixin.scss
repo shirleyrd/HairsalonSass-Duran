@@ -1,0 +1,14 @@
+
+     @mixin dimensiones($alto,$ancho,$bordradius) {
+        height:$alto;
+        width:$ancho;
+        border-radius:$bordradius;
+        
+    
+    }
+     
+     @mixin dimensiones2($alto2,$ancho2,$display) {
+        height: $alto2;
+        width: $ancho2;
+        display:$display;
+    }

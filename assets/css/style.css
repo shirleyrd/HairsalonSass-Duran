@@ -79,33 +79,33 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr;
   grid-template-areas: "containerVid1 containerText1" "containerText2 containerVid2"; }
-  .containerIndex .containerVid1 {
+  .containerIndex .containerIndex_Vid1 {
     grid-area: containerVid1;
     padding-right: 20px;
     padding-top: 20px; }
-  .containerIndex .containerText1 {
+  .containerIndex .containerIndex_Text1 {
     grid-area: containerText1;
     justify-content: right;
     padding-top: 20px; }
-    .containerIndex .containerText1 p {
+    .containerIndex .containerIndex_Text1 p {
       text-align: justify;
       padding-left: 20px; }
-  .containerIndex .containerVid2 {
+  .containerIndex .containerIndex_Vid2 {
     grid-area: containerVid2;
     padding-left: 20px;
     padding-top: 30px;
     padding-bottom: 20px; }
-  .containerIndex .containerText2 {
+  .containerIndex .containerIndex_Text2 {
     grid-area: containerText2;
     justify-content: left;
     padding-right: 20px;
     padding-top: 30px;
     padding-bottom: 20px; }
-    .containerIndex .containerText2 p {
+    .containerIndex .containerIndex_Text2 p {
       text-align: justify;
       padding-right: 20px;
       padding-top: 10px; }
-    .containerIndex .containerText2 .titleSub {
+    .containerIndex .containerIndex_Text2 .titleSub {
       text-align: left; }
   .containerIndex h1 {
     color: #f3cad5; }
@@ -127,11 +127,10 @@ main {
       color: #4e4e50; }
 
 .carousel {
-  width: 80%;
+  width: 70%;
   margin: auto; }
-
-.carousel-inner {
-  align-content: center; }
+  .carousel .carousel-inner {
+    align-content: center; }
 
 .formTurnos {
   background: #1a1a1d;
@@ -145,9 +144,9 @@ main {
   padding-inline: 55px;
   font-family: 'Raleway', sans-serif;
   color: #f3cad5;
-  line-height: 15pt;
-  position: relative;
-  z-index: 1; }
+  line-height: 15pt; }
+  .formTurnos .btn {
+    color: #f3cad5; }
 
 .formContacto {
   background: #1a1a1d;
@@ -185,6 +184,9 @@ main {
     flex-direction: column; }
     .containerIndex .mainContent__video {
       width: 100%; }
+  .carousel {
+    width: 100%;
+    margin: auto; }
   .nav-item {
     display: flex;
     align-content: flex-start; }
