@@ -60,7 +60,9 @@ footer {
   font-family: 'Montserrat', sans-serif; }
 
 body {
-  height: 80vh;
+  height: 80vh; }
+
+main {
   background-image: url(../img/tijerabcgtransparencia.png);
   background-color: #1a1a1d; }
 
@@ -109,7 +111,7 @@ body {
     color: #f3cad5; }
   .container h2 {
     text-align: right;
-    color: #f3cad5; }
+    color: #ff499399; }
   .container p {
     color: #f3cad5;
     text-align: justify; }
@@ -159,6 +161,13 @@ body {
   line-height: 15pt; }
   .formContacto .form-label {
     width: fit-content; }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column; }
+    .container .mainContent__video {
+      width: 100%; } }
 
 @media screen and (max-width: 480px) {
   .logotipo {
