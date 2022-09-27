@@ -218,7 +218,14 @@ main {
     display: flex;
     flex-direction: column; }
     .containerIndex .mainContent__video {
-      width: 100%; } }
+      width: 100%; }
+  .title {
+    font-size: 3.5rem; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat 3 1fr;
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6"; } }
 
 @media screen and (max-width: 480px) {
   .logotipo {
@@ -247,9 +254,9 @@ main {
   .cards {
     display: flex;
     flex-direction: column;
-    width: 20px;
-    justify-self: center;
-    margin-left: 25px; }
+    width: 100%; }
+    .cards .card {
+      margin: auto; }
   .formTurnos,
   .formContacto {
     height: fit-content;
