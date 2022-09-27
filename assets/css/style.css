@@ -108,16 +108,48 @@ main {
     color: #f3cad5;
     text-align: justify; }
 
-.card-body {
-  background-color: #1a1a1d; }
-  .card-body p {
-    color: #f3cad5;
-    justify-content: center; }
-  .card-body .card-text a {
-    text-decoration: none;
-    color: #f3cad5; }
-    .card-body .card-text a:hover {
-      color: #4e4e50; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat 3 1fr;
+  grid-template-rows: repeat 2 1fr;
+  grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+  justify-content: center;
+  gap: 50px;
+  padding-top: 20px; }
+  .cards .card {
+    width: 288px;
+    background-color: #1a1a1d;
+    border-radius: 15px;
+    border-color: #e6b0bc; }
+    .cards .card p {
+      color: #f3cad5;
+      justify-content: center; }
+    .cards .card a {
+      text-decoration: none;
+      color: #f3cad5; }
+      .cards .card a:hover {
+        color: #4e4e50; }
+  .cards .cardImg {
+    width: 285px;
+    border-radius: 15px; }
+
+.card1 {
+  grid-area: card1; }
+
+.card2 {
+  grid-area: card2; }
+
+.card3 {
+  grid-area: card3; }
+
+.card4 {
+  grid-area: card4; }
+
+.card5 {
+  grid-area: card5; }
+
+.card6 {
+  grid-area: card6; }
 
 .title_2 {
   color: #ff499399;
@@ -212,6 +244,10 @@ main {
   .carousel {
     width: 100%;
     margin: auto; }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    width: 20px; }
   .formTurnos,
   .formContacto {
     height: fit-content;

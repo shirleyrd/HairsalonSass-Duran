@@ -67,9 +67,15 @@
       
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        
+    }
 
-    
-  
+
+
  
 
     .formTurnos,
