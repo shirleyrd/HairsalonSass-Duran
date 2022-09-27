@@ -120,13 +120,13 @@ main {
     width: 288px;
     background-color: #1a1a1d;
     border-radius: 15px;
-    border-color: #e6b0bc; }
+    border-color: #ff499399; }
     .cards .card p {
       color: #f3cad5;
       justify-content: center; }
     .cards .card a {
       text-decoration: none;
-      color: #f3cad5; }
+      color: #ff499399; }
       .cards .card a:hover {
         color: #4e4e50; }
   .cards .cardImg {
