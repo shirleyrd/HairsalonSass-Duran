@@ -68,9 +68,7 @@ main {
             padding-right: $paddingestandar;
             padding-top: 10px;
 
-        }
-
-       
+        }     
 
         .titleSub {
             text-align: left;
@@ -79,12 +77,9 @@ main {
         
     }
   
-
-
     h1 {
         color:$colortextoprin;
     }
-
     h2 {
 
         @include subtitulos ($colorbgp, uppercase,2px 2px 5px $colorhover);        
@@ -94,19 +89,20 @@ main {
     p {
         color:$colortextoprin;
         text-align: justify;
-    }
-
-  
-
- 
+    } 
    
 }            
-         
-
+  
  .card-body {
     background-color: $colorbackg;
+    p {
+        color:$colortextoprin;
+        justify-content: center;
+    }
     
     .card-text {
+
+        
         a {
         text-decoration: none;
         color: $colortextoprin;

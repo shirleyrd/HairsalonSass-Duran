@@ -110,6 +110,9 @@ main {
 
 .card-body {
   background-color: #1a1a1d; }
+  .card-body p {
+    color: #f3cad5;
+    justify-content: center; }
   .card-body .card-text a {
     text-decoration: none;
     color: #f3cad5; }
@@ -175,8 +178,6 @@ main {
   padding-bottom: 15px;
   padding-inline: 55px;
   line-height: 15pt; }
-  .formContacto .form-label {
-    width: fit-content; }
   .formContacto .btn {
     color: #f3cad5; }
 
